@@ -1,8 +1,51 @@
 :root{
---Green-500: hsl(158, 36%, 37%)
---Green-700: hsl(158, 42%, 18%)
---Black: hsl(212, 21%, 14%)
---Grey: hsl(228, 12%, 48%)
---Cream: hsl(30, 38%, 92%)
---White: hsl(0, 0%, 100%)
+--Green-500: hsl(158, 36%, 37%);
+--Green-700: hsl(158, 42%, 18%);
+--Black: hsl(212, 21%, 14%);
+--Grey: hsl(228, 12%, 48%);
+--Cream: hsl(30, 38%, 92%);
+--White: hsl(0, 0%, 100%);
+}
+.Perfume-Image{
+    width:90%;
+      height:auto;
+}
+.about_image{
+   letter-spacing: 0.5rem;
+   color:var(--Cream);
+}
+
+h1{
+    font-size: 2rem;
+}
+.about_perfume{
+    line-height: 1.5;
+    color:var(--Grey)
+}
+.price{
+    color:var(--Green-500);
+    font-size:3rem;
+    font-weight:700
+}
+.actual-price{
+   text-decoration: line-through;
+   display:flex;
+   align-items:center;
+   color:var(--Grey)
+}
+.amount{
+    display:flex;
+    gap:1rem;
+}
+button{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+    padding:0 3rem;
+    background-color:var(--Green-500);
+    color:var(--White);
+    border-radius:0.50rem;
+    font-size:1rem;
 }

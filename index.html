@@ -1,25 +1,26 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>Product Preview Card</title>
-        <meta name="viewport" device="device-width, initial-scale:0.1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <main class="product-preview-card">
             <section class="image">
-                <img src="image-product-mobile.jpg" alt="perfume image">
-                <p class="about image">PERFUME</p>
+                <img src="image-product-mobile.jpg" alt="perfume image" class="perfume_image" width="450" height="400">
+                <p class="about_image">PERFUME</p>
             </section>
             <section class="text">
                 <h1>Gabrielle Essence Eau De Parfum</h1>
-                <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+                <p class="about_perfume">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
             </section>
             <section>
-                <p class="amount"><span class="price">$149.99</span><span class="actual-price">$169.99</span></p>
+                <p class="amount"><span class="price">$149.99</span><s class="actual_price">$169.99</s></p>
                 <button>
-                    <image src="icon-cart.svg" alt="cart image">
-                    <p class="cart-text">Add to Cart</p>
+                    <img src="icon-cart.svg" alt="cart image">
+                    <span class="cart-text">Add to Cart</span>
                 </button>
             </section>
         </main>

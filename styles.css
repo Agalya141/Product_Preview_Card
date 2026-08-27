@@ -1,3 +1,5 @@
+@import url('https://googleapis.com');
+
 :root{
 --Green-500: hsl(158, 36%, 37%);
 --Green-700: hsl(158, 42%, 18%);
@@ -19,7 +21,6 @@ body{
     align-items:center;
     min-height:100vh;
     padding:1.5rem;
-    
 }
 .product-preview-card{
     margin:1rem auto;
@@ -62,9 +63,6 @@ gap:0.5rem;
     gap:1rem;
     margin-top:0.5rem;
 }
-h1{
-    font-size: 2rem;
-}
 .about_perfume{
     line-height: 1.5;
     color:var(--Grey)
@@ -97,16 +95,31 @@ button{
 .cart-text{
     font-weight:700;
 }
-@media(min-width:37.5rem){
+button:hover {
+    background-color: var(--Green-700);
+}
+
+@media(min-width:32.5rem){
+    *{
+        box-sizing:border-box;
+        padding:0;
+        margin:0;
+    }
     body{
         display:flex;
+        align-items:center;
+        justify-content:center;
+        min-height:100vh;
+        
     }
     .product-preview-card{
-     padding:2rem;
-     min-width:50rem;
+        padding-right:1rem;
+     min-width:45rem;
+     height:auto;
      display:flex;
      align-items:center;
-     justify-content:flex-start;
+     justify-content:center;
+     flex-direction:row;
     }
     .perfume_image_mobile{
         display:none;
@@ -114,11 +127,12 @@ button{
     .perfume_image_desktop{
         display:block;
         padding:0;
-    }
-    .text_section{
-     display:flex;
-     align-items:center;
-     justify-content:flex-start;
-     
-    }
+        width:23rem;
+        }
+        .text_section{
+            padding:0;
+            display:flex;
+            gap:1.5rem;
+        }
+    
 }

@@ -1,4 +1,4 @@
-@import url('https://googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@400;500;700&display=swap');
 
 :root{
 --Green-500: hsl(158, 36%, 37%);
@@ -100,26 +100,20 @@ button:hover {
 }
 
 @media(min-width:32.5rem){
-    *{
-        box-sizing:border-box;
-        padding:0;
-        margin:0;
-    }
     body{
         display:flex;
         align-items:center;
         justify-content:center;
-        min-height:100vh;
-        
+        min-height:100vh;       
     }
     .product-preview-card{
-        padding-right:1rem;
-     min-width:45rem;
+     max-width:45rem;
      height:auto;
      display:flex;
      align-items:center;
      justify-content:center;
      flex-direction:row;
+     overflow:hidden;
     }
     .perfume_image_mobile{
         display:none;
@@ -128,11 +122,15 @@ button:hover {
         display:block;
         padding:0;
         width:23rem;
+        height:auto;
+        align-self:stretch;
+        object-fit: cover;
         }
         .text_section{
-            padding:0;
             display:flex;
             gap:1.5rem;
+            padding:1.5rem;
+            
         }
     
 }
